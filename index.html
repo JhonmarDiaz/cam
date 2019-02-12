@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Proyecto Final Uisrael</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://code.jquery.com/jquery-3.3.1.js" crossorigin="anonymous"></script>
+        <script src="func.js" type="text/javascript"></script>
+		<style type="text/css">
+		  .guardar{
+			text-decoration: none;
+			padding: 3px;
+			padding-left: 10px;
+			padding-right: 10px;
+			font-family: helvetica;
+			font-weight: 200;
+			font-size: 14px;
+			font-style: italic;
+			color: #C4F4E3;
+			background-color: #3282AF;
+			border-radius: 15px;
+			border: 3px double #C4F4E3;
+		  }
+		  .guardar:hover{
+			opacity: 0.6;
+			text-decoration: none;
+		  }
+		</style>
+		<style type="text/css">
+		  .eliminar{
+			text-decoration: none;
+			padding: 3px;
+			padding-left: 10px;
+			padding-right: 10px;
+			font-family: helvetica;
+			font-weight: 200;
+			font-size: 14px;
+			font-style: italic;
+			color: #FEFEFE;
+			background-color: #97524C;
+			border-radius: 15px;
+			border: 3px double #FEFEFE;
+		  }
+		  .eliminar:hover{
+			opacity: 0.6;
+			text-decoration: none;
+		  }
+		</style>
+    </head>
+    <body  bgcolor="#E3F5FF">
+	<img align="right" src="uisrael.png" width="150" height="50"><br><br>
+	<center>
+	<p><b>Registro de Empleados</b></p>
+        <div>
+		<td>Nombre del Empleado:<br>
+            <input type="text" name="txtNombre" value="Jimmy" id="txtNombre" required /></td> <br>     
+		<td>Apellido del Empleado:<br>
+			<input type="text" name="txtApellido" value="Maza" id="txtApellido" required  /></td><br>     
+		<td>Dirección del Empleado:<br>
+			<input type="text" name="txtDireccion" value="Maza" id="txtDireccion" required /></td><br>
+        
+		<td>Año de Nacimiento:<br>
+			<input type="number" name="txtAnionacimiento" value="1990" id="txtAnionacimiento"  required /></td><br>
+        		
+			<input hidden type="text" name="txtedades" value="100" id="txtedades"/><br>
+            
+         <td><br>   
+            <input type="submit" value="Guardar" id="btnGuardar" class="guardar"/>
+            <!--<input type="submit" value="Guardar2" id="btnGuardar2" class="guardar"/>
+            <input type="submit" value="Traerinter" id="btnGuardar3" class=""/>-->
+			</td>
+        </div>
+	<div>
+            <ol id="lista">
+                <li type="circle" value="1">Lista</li>
+            </ol>
+	</div>
+	</center>
+    </body>
+</html>
